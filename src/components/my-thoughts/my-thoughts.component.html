@@ -1,0 +1,30 @@
+<div class="my-thoughts">
+  <h1>My Thoughts</h1>
+  <div style="text-align:center;">
+    <button class="new-thought-button" (click)="newThought = !newThought">New Thought</button>
+  </div>
+  <div class="posts" *ngIf="postsList.length >= 1">
+    <ol>
+      <div class="list-item" *ngFor="let post of postsList; let i = index">
+        <li>
+          <button class="x-button" (click) = "DeletePost(i)">X</button>
+          <h2>{{post.title}}</h2>
+          <span>{{post.thought}}</span>
+        </li>
+      </div>
+    </ol>
+  </div>
+</div>
+
+<div class="new-thought" *ngIf="newThought">
+  <h4 class="title">Title:</h4>
+  <input class="title-input" [(ngModel)] = "postTitle"/>
+  <h4 class="thought">Thought:</h4>
+  <textarea class="thought-input" rows="20" cols="55" [(ngModel)] = "postText"></textarea>
+  <br>
+  <div style="text-align:center;">
+    <button class="add-thought-button" (click)="AddPost(postTitle, postText)">Add Thought</button>
+  </div>
+</div>
+
+

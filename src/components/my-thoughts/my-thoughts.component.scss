@@ -1,0 +1,83 @@
+.my-thoughts {
+    background-color: rgb(229, 226, 255);
+    width: 70%;
+    height: 100%;
+    padding: 15px 100px 90px 100px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.title {
+    padding-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 2px;
+}
+
+.thought {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 2px;
+}
+
+.title-input, .thought-input {
+    margin-left: 10px;
+}
+
+
+.new-thought-button {
+    width: 360px;
+    background-color: white;
+    color: black;
+    border-radius: 25px;
+    margin-bottom: 15px;
+}
+
+.new-thought {
+    background-color: rgb(125, 150, 224);
+    width: 50%;
+    height: 460px;
+    margin: auto;
+}
+
+.add-thought-button {
+    width: 200px;
+    background-color: white;
+    color: black;
+    border-radius: 25px;
+    margin-top: 20px;
+}
+
+.x-button {
+    
+    float: right;
+    margin-right: 20px;
+    margin-bottom: 25px;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    border-radius: 25px;
+}
+
+.x-button:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+
+.list-item {
+    transition: transform .2s;
+    
+}
+
+.list-item:hover {
+    transform: scale(1.02);
+}
+
+.posts {
+    background-color: white;
+    width: 90%;
+    padding-right: 55px;
+    border: 2px solid black;
+}
